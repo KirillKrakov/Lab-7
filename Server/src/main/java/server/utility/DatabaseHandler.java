@@ -59,7 +59,6 @@ public class DatabaseHandler {
         try {
             Class.forName(JDBC_DRIVER);
             connection = DriverManager.getConnection(url, user, password);
-            //connection = DriverManager.getConnection(url, "root", "Qx349h0i@");
             Outputer.println("Соединение с базой данных установлено.");
             ServerApp.logger.info("Соединение с базой данных установлено.");
         } catch (SQLException exception) {
